@@ -7,8 +7,8 @@ function DisplayTweet(props){
     <div className="displayTweets">
       <ul>
       {
-        props.tweets.map(tweet => {
-          return <li><Tweet tweets={tweet}/></li>
+        props.tweets.map((tweet,i) => {
+          return <li key={i}><Tweet tweets={tweet}/></li>
         })
       }
       </ul>

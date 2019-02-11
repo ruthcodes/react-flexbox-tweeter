@@ -15,10 +15,10 @@ class Main extends Component{
           name: 'Gary Gloves', username: "@GooGloves", avatarImage: "/images/gary.png", tweet: "Some other more irrelevant tweet"
         },
         {
-          name: 'Gary Gloves', username: "@GooGloves", avatarImage: "/images/gary.png", tweet: "Some other more irrelevant tweet"
+          name: 'Abcde', username: "@abcde", avatarImage: "/images/abcde.png", tweet: "It's not my birthday!"
         },
         {
-          name: 'Gary Gloves', username: "@GooGloves", avatarImage: "/images/gary.png", tweet: "Some other more irrelevant tweet"
+          name: 'Cauliflower', username: "@cooliflower", avatarImage: "/images/cooliflower.png", tweet: "I like writing tweets"
         }
       ],
     }

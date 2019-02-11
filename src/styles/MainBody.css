@@ -2,6 +2,7 @@ main{
   display: flex;
   justify-content: center;
   height: 100%;
+  margin-top: 106px;
 }
 
 img {
@@ -98,6 +99,9 @@ content{
   }
   content {
     margin-right: 0;
+  }
+  main{
+    margin-top: 155px;
   }
 
 }
