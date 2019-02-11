@@ -1,0 +1,110 @@
+main{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+img {
+  margin: 10px;
+}
+
+.side {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  flex:1.5;
+  background-color: #E1E8ED;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  flex: 2.5;
+  background-color: #E1E8ED;
+}
+
+content{
+  width:600px;
+  background: white;
+  margin-right: 20px;
+}
+
+.writeTweet{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #AAB8C2;
+  padding: 15px;
+}
+
+.writeTweet img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.writeTweet input {
+  flex: 1 0 300px;
+}
+
+
+.followSuggestion {
+  background: white;
+  width: 350px;
+  height: 300px;
+}
+
+.displayTweets ul {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 0;
+  align-items: stretch;
+
+}
+
+.displayTweets li {
+  display: flex;
+  flex-flow: column nowrap;
+  border-bottom: 1px solid #AAB8C2;
+  padding: 15px;
+}
+
+.user{
+  padding: 0;
+  justify-content:flex-start;
+}
+
+.tweetInteractions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tweetInteractions p {
+  flex: 1;
+}
+
+
+@media (max-width: 990px) {
+  .side, .writeTweet{
+    display: none;
+  }
+  .main {
+    padding-top: 0;
+    justify-content: center;
+  }
+  content {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+  content{
+    width: 100vw;
+  }
+
+}
