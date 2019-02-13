@@ -18,10 +18,12 @@ ul {
  list-style: none;
  flex:0 1 400px;
  padding: 0;
+ margin: 0;
 }
 
 li img {
   height: 50px;
+  margin: 0;
   cursor: pointer;
 }
 
@@ -43,7 +45,7 @@ input {
 .user{
   flex-basis: 250px;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .user img{
@@ -52,11 +54,14 @@ input {
   border-radius: 100%;
 }
 
+header .user img {
+  height: 40px;
+  width: 40px;
+}
+
 @media (max-width: 990px) {
   header{
     flex-direction: column;
-    align-items: flex-start;
-
   }
   input{
     display: none;
@@ -66,9 +71,26 @@ input {
     flex-basis: 50px;
   }
   ul{
-    flex: 1;
     order: 2;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-basis: 100%;
+    width: 100vw;
+    max-width: 600px;
+    flex-shrink: 1;
+  }
+
+  header ul li {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .user{
+    box-sizing: border-box;
+    margin-top: 8px;
+    width: 100vw;
+    max-width: 600px;
+    padding-left: 10px;
+    justify-content: flex-start;
   }
 }
