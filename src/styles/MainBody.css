@@ -11,10 +11,17 @@ img {
 
 .side {
   display: flex;
-  justify-content: flex-start;
+  flex-flow: column nowrap;
   padding-top: 20px;
   flex:1.5;
   background-color: #E1E8ED;
+}
+
+.sideFlexCont {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 620px;
+  justify-content: space-between;
 }
 
 .main {
@@ -23,6 +30,13 @@ img {
   padding-top: 20px;
   flex: 2.5;
   background-color: #E1E8ED;
+}
+
+.main .user div {
+  display: flex;
+}
+.main .user div > * {
+  margin: 5px;
 }
 
 content{
@@ -118,13 +132,22 @@ content{
   justify-content:flex-start;
 }
 
+.main .user {
+  align-items: flex-start;
+}
+
+.tweetText {
+  margin-left: 55px;
+  margin-top: -20px;
+}
+
 .tweetInteractions {
   display: flex;
-  justify-content: flex-start;
 }
 
 .tweetInteractions p {
   flex: 1;
+  text-align: center;
 }
 
 

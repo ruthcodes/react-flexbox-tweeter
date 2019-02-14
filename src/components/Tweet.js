@@ -6,7 +6,7 @@ function Tweet(props){
   return (
     <div>
       <User user={props.tweets}/>
-      <p>{props.tweets.tweet}</p>
+      <p className="tweetText">{props.tweets.tweet}</p>
       <div className="tweetInteractions">
         <p>Comments</p>
         <p>Retweets</p>

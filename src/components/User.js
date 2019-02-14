@@ -6,7 +6,10 @@ function User(props){
     return (
       <div className="user">
         <Avatar image={props.user.avatarImage || props.user.image}/>
-        <p>{props.user.username}</p>
+        <div>
+          <p><b>{props.user.name}</b></p>
+          <p>{props.user.username}</p>
+        </div>
       </div>
     )
 }

@@ -5,7 +5,10 @@ import '../styles/MainBody.css';
 function Sidebar(props){
   return (
     <div className="side">
-      <AsideContent user={props.user}/>
+      <div className="sideFlexCont">
+        <AsideContent title={"Who To Follow"} data={props.user}/>
+        <AsideContent title={"Trends For You"} data={props.trends}/>
+      </div>
     </div>
   )
 }

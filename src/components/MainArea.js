@@ -17,6 +17,17 @@ class MainArea extends Component{
         {
           name: 'Kait Wester', username: "@qwest", image: './images/gary.png'
         },
+      ],
+      trends : [
+        {
+          where: "Scotland", hashtag: "#Scott", NoTweets: "24.5K"
+        },
+        {
+          where: "United Kingdom", hashtag: "#King", NoTweets: "1.12M"
+        },
+        {
+          where: "United Kingdom", hashtag: "#Unite", NoTweets: "61.4K"
+        }
       ]
     }
   }
@@ -24,7 +35,7 @@ class MainArea extends Component{
     return (
       <main>
         <Main user={this.props.user}/>
-        <Sidebar user={this.state.otherUsers}/>
+        <Sidebar user={this.state.otherUsers} trends={this.state.trends}/>
       </main>
     )
   }
