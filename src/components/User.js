@@ -5,7 +5,7 @@ import '../styles/Header.css';
 function User(props){
     return (
       <div className="user">
-        <Avatar image={props.user.avatarImage}/>
+        <Avatar image={props.user.avatarImage || props.user.image}/>
         <p>{props.user.username}</p>
       </div>
     )

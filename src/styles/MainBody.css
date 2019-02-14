@@ -42,8 +42,8 @@ content{
 }
 
 .writeTweet img {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border-radius: 100%;
   margin: 5px;
 }
@@ -57,14 +57,53 @@ content{
   background: white;
   width: 350px;
   height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.followSuggestion h2 {
+  margin: 0;
+  border-bottom: 1px solid #AAB8C2;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 7px;
+}
+
+.followSuggestion ul {
+  display:flex;
+  flex-flow: column nowrap;
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  margin: 0;
+}
+
+.followSuggestion ul li {
+  flex: 1;
+  border-bottom: 1px solid #AAB8C2;
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+}
+
+.followSuggestion ul li img {
+  margin: 5px;
+}
+
+.followSuggestion ul li p {
+  margin: 0;
+  margin-left: 5px;
 }
 
 .displayTweets ul {
   display: flex;
   flex-flow: column nowrap;
-  margin-top: 0;
   align-items: stretch;
-
+  flex:0 1 400px;
+  padding: 0;
+  margin: 0;
 }
 
 .displayTweets li {

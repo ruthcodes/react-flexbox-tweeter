@@ -5,7 +5,7 @@ import '../styles/MainBody.css';
 function Sidebar(props){
   return (
     <div className="side">
-      <AsideContent />
+      <AsideContent user={props.user}/>
     </div>
   )
 }

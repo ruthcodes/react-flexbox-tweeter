@@ -9,13 +9,13 @@ class MainArea extends Component{
     this.state = {
       otherUsers: [
         {
-          name: 'Bat Man', username: "@superbat", image: './images/bat.png'
+          name: 'Bat Man', username: "@superbat", image: './images/abcde.png'
         },
         {
-          name: 'Berty Higgins', username: "@bighuggins", image: './images/berty.png'
+          name: 'Berty Higgins', username: "@bighuggins", image: './images/cooliflower.png'
         },
         {
-          name: 'Kait Wester', username: "@qwest", image: './images/kait.png'
+          name: 'Kait Wester', username: "@qwest", image: './images/gary.png'
         },
       ]
     }
@@ -24,7 +24,7 @@ class MainArea extends Component{
     return (
       <main>
         <Main user={this.props.user}/>
-        <Sidebar />
+        <Sidebar user={this.state.otherUsers}/>
       </main>
     )
   }

@@ -11,7 +11,7 @@ header {
   background: white;
 }
 
-ul {
+header ul {
  display: flex;
  justify-content: center;
  align-self: center;
@@ -70,7 +70,7 @@ header .user img {
     order: 1;
     flex-basis: 50px;
   }
-  ul{
+  header ul{
     order: 2;
     justify-content: space-between;
     flex-direction: row;
