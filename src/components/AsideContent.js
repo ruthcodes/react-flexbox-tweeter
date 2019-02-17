@@ -1,6 +1,7 @@
 import React from 'react';
 import User from './User';
 import Trends from './Trends';
+import Button from './Button';
 import '../styles/MainBody.css';
 
 function AsideContent(props){
@@ -13,7 +14,7 @@ function AsideContent(props){
         {
           props.data.map((data,i) => {
             return trends ? <li key={i}><Trends trends={data}/></li>
-                          : <li key={i}><User user={data}/></li> 
+                          : <li key={i}><User user={data}/><Button class="followButton"/></li>
           })
         }
         <li> <p>Show More</p> </li>

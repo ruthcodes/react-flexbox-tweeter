@@ -150,6 +150,16 @@ content{
   text-align: center;
 }
 
+.followButton {
+  background: white;
+  border: 1px solid #1DA1F2;
+  color: #1DA1F2;
+  font-weight: 900;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
 
 @media (max-width: 990px) {
   .side, .writeTweet{
