@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/MainBody.css'
 
 function Trends(props){
-  console.log(props.trends)
   return (
     <div>
       <p>Trending in {props.trends.where}</p>

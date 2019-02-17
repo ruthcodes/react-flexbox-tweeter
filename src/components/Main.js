@@ -21,13 +21,39 @@ class Main extends Component{
           name: 'Cauliflower', username: "@cooliflower", avatarImage: "/images/cooliflower.png", tweet: "I like writing tweets"
         }
       ],
+      nextTweet: ''
+    }
+  }
+
+  handleChange = (e) => {
+    console.log(e.target.value)
+    this.setState({
+      nextTweet: e.target.value
+    })
+  }
+
+  handleSubmit = (e) => {
+
+    if (e.keyCode === 13 && this.state.nextTweet) {
+      let tweets = [...this.state.tweets];
+      let newTweet = {
+        name: this.props.user.name,
+        username: this.props.user.username,
+        avatarImage: this.props.user.avatarImage,
+        tweet: this.state.nextTweet
+      }
+      tweets.unshift(newTweet)
+      this.setState({
+        tweets: tweets,
+        nextTweet: ''
+      })
     }
   }
   render(){
     return (
       <div className="main">
         <content>
-          <WriteTweet user={this.props.user}/>
+          <WriteTweet user={this.props.user} handlechange={this.handleChange} handlesubmit={this.handleSubmit} value={this.state.nextTweet}/>
           <DisplayTweet tweets={this.state.tweets}/>
         </content>
       </div>

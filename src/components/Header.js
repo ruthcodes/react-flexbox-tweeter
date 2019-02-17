@@ -22,7 +22,7 @@ class Header extends Component{
       <header>
         <MainNav icons={this.state.icons}/>
         <InputBar placeholder="Search Twitter"/>
-        <User user={this.props.user}/>
+        <User user={this.props.user} hideUsername={true}/>
       </header>
     )
   }

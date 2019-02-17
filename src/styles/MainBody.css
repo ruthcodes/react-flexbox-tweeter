@@ -9,6 +9,11 @@ img {
   margin: 10px;
 }
 
+main input {
+  background-image: none;
+  text-indent: 0px;
+}
+
 .side {
   display: flex;
   flex-flow: column nowrap;

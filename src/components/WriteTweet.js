@@ -7,7 +7,7 @@ function WriteTweet(props){
   return (
     <div className="writeTweet">
       <Avatar image={props.user.avatarImage}/>
-      <InputBar placeholder="What's Happening?" />
+      <InputBar placeholder="What's Happening?" handlechange={props.handlechange} handlesubmit={props.handlesubmit} value={props.value}/>
       <img src="/images/upload-image.png" alt=""/>
       <img src="/images/upload-gif.png" alt=""/>
       <img src="/images/upload-poll.png" alt=""/>

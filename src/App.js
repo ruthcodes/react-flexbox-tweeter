@@ -8,8 +8,9 @@ class App extends Component {
     super(props);
     this.state = {
       user: {
-        username: "Ruth Ashleigh",
-        avatarImage: "/images/head.png",
+        username: "@RuthAshleigh",
+        name: "Ruth Ashleigh",
+        avatarImage: "./images/head.png",
         tweets: []
       }
     }
